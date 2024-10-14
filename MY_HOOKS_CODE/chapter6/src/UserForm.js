@@ -41,6 +41,7 @@ function UserForm() {
         }
 
         if (emailValid && passwordValid) {
+
             alert('Email: ' + email + '\nPassword: ' + password);
             setEmail("");
             setPassword("");
@@ -61,7 +62,8 @@ function UserForm() {
                     <Alert variant="danger">{emailError}</Alert>}
                 <Form.Group controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" onChange={event => setPassword(event.target.value)} value={password} />
+                    <Form.Control type="password" placeholder="Password" onChange={event
+                        => setPassword(event.target.value)} value={password} />
                 </Form.Group>
                 {passwordError.length > 0 &&
                     <Alert variant="danger">{passwordError}</Alert>}

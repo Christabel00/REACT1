@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios'; // npm install axios 
 import Card from 'react-bootstrap/Card';
+import ReactLoading from 'react-loading'; 
+
 function GitHub() {
     const [data, setData] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
